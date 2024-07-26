@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom, #fddb92, #d1fdff);
+    max-height: 100dvh;
+    max-width: 100dvw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/download.jpg");
+    background-size: auto;
+    
+      }
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+     gap: 50px;
+   
+}
+
+h1 {
+    font-size: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+   
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    background-color: transparent; /* Set the background color to be transparent */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adjust the alpha value here for the box shadow transparency */
+}
+.weatherResult {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding-top: 80px;
+}
+.currentLocation {
+    font-size: xx-large;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+.currentTemperature {
+    font-size: 60px;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    
+}
+.currentDescription {
+    font-size: larger;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    padding: 40px;
+}
+.image {
+    width: 100px;
+    height: 100px;
+}
+.currentDate{
+    font-size: large;
+    font-weight: 400;
+    margin: 4px;
+}
+
+@media screen and ( max-width : 968px) {
+    .container {
+        position: relative;
+        width: 95dvw;
+        height: 90dvh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+        height: 100%;
+       
+    }
+    .weather-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 40%;
+        background-color: rgba(255, 255, 255, 0.5); /* Set the background color to be transparent */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adjust the alpha value here for the box shadow transparency */
+    }
+    .weatherResult {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        color: #fff;
+        padding-top: 10px;
+    }
+    .currentLocation {
+        font-size: xx-large;
+        font-weight: 600;
+        margin: 0 0 3px 0;
+        padding: 0;
+    }
+    .currentTemperature {
+        font-size: 50px;
+        font-weight: 800;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .currentDescription {
+        font-size: larger;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 80%;
+    }
+    .image {
+        width: 100px;
+        height: 100px;
+    }
+}

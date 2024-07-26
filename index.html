@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="weatherResult">
+            <img src="images/sun1.png" alt="temprature_img" id="image" class="image" />
+            <p id="currentTemperature" class="currentTemperature">29°C</p>
+            <h3 id="currentDate" class="currentDate">2024-07-22</h3>
+            <p id="currentLocation" class="currentLocation">Jemo</p>
+            <p id="currentDescription" class="currentDescription">broken clouds</p>
+        </div>
+       
+        <div class="weather-info">
+            <div class="info">
+                <input type="text" id="locationInput" placeholder="Enter a city">
+                <button id="searchButton">Search</button>
+            </div>
+            <h2 id="location"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
